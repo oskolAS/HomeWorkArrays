@@ -18,14 +18,22 @@ public class Main {
         int[] array = new int[]{1, 2, 3};
         double[] arrayTwo = {1.57, 7.654, 9.986};
         char[] arrayChar = {'a', 'b', 'c'};
-        for (int i = 0; i < 3; i++) {
-            System.out.println(array[i]);
+        for (int i = 0; i <  array.length; i++) {
+            if (i < array.length - 1)
+                System.out.print(array[i] + ", ");
+             else System.out.print(array[i]);
         }
-        for (int i = 0; i < 3; i++) {
-            System.out.println(arrayTwo[i]);
+        System.out.println();
+        for (int i = 0; i < arrayTwo.length; i++) {
+            if (i < arrayTwo.length - 1)
+            System.out.print(arrayTwo[i] + ", ");
+            else System.out.print(arrayTwo[i]);
         }
-        for (int i = 0; i < 3; i++) {
-            System.out.println(arrayChar[i]);
+        System.out.println();
+        for (int i = 0; i < arrayChar.length; i++) {
+            if (i < arrayChar.length - 1)
+            System.out.print(arrayChar[i] + ", ");
+            else System.out.println(arrayChar[i]);
         }
 
     }
